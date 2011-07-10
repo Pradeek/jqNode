@@ -1,5 +1,5 @@
-jqNode - A micro-framework for NodeJS
-======================================
+jqNode - A micro-framework for NodeJS : 
+=======================================
 	jqNode is an easy to use micro-framework for NodeJS.
 
 USAGE :
@@ -23,6 +23,6 @@ $(url)
 	.delete(function(request, response) {})
 	.head(function(request, response) {});
 
-$.start(port); // Starts and returns the server. Port defaults to 8888
+$.start(port, debugMode); // Starts and returns the server. Port defaults to 8888, debugMode defaults to false.
 $.write(data, contentType); // Writes to the current response. contentType defaults to text/html
 $.writeFile(fileName); // Reads a file and writes it to the current stream.
