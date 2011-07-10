@@ -1,0 +1,24 @@
+jqNode - A micro-framework for NodeJS
+======================================
+	jqNode is an easy to use micro-framework for NodeJS.
+
+USAGE :
+=======
+	
+var $ = require("jqNode").$;
+
+$("/").get(function(request, response) {
+	$.writeFile("index.html");
+});
+
+$.start();
+
+METHODS AVAILABLE : 
+===================
+
+$(url).get(function(request, response) {});
+$(url).post(function(request, response) {});
+
+$.start(port); // Starts and returns the server.
+$.write(content); // Writes to the current response
+$.writeFile(fileName); // Reads a file and writes it to the current stream.
