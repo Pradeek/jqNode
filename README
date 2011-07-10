@@ -4,7 +4,6 @@ jqNode - A micro-framework for NodeJS
 
 USAGE :
 =======
-	
 var $ = require("jqNode").$;
 
 $("/").get(function(request, response) {
@@ -13,12 +12,17 @@ $("/").get(function(request, response) {
 
 $.start();
 
+
 METHODS AVAILABLE : 
 ===================
 
-$(url).get(function(request, response) {});
-$(url).post(function(request, response) {});
+$(url)
+	.get(function(request, response) {})
+	.post(function(request, response) {})
+	.put(function(request, response) {})
+	.delete(function(request, response) {})
+	.head(function(request, response) {});
 
-$.start(port); // Starts and returns the server.
-$.write(content); // Writes to the current response
+$.start(port); // Starts and returns the server. Port defaults to 8888
+$.write(data, contentType); // Writes to the current response. contentType defaults to text/html
 $.writeFile(fileName); // Reads a file and writes it to the current stream.
