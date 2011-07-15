@@ -2,6 +2,10 @@ jqNode - A micro-framework for NodeJS :
 =======================================
 	jqNode is an easy to use micro-framework for NodeJS.
 
+INSTALLATION :
+==============
+	npm install jqNode
+
 USAGE :
 =======
 var $ = require("jqNode").$;
