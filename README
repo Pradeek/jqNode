@@ -10,12 +10,13 @@ USAGE :
 =======
 var $ = require("jqNode").$;
 
-$("/").get(function(request, response) {
+$("/").get(function(request, response, data) {
 	$.writeFile("index.html");
 });
 
 $("/data").post(function(request, response, data) {
 	// data.param === value
+	console.log(data);
 });
 
 $.start();
