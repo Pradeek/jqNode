@@ -4,4 +4,8 @@ $("/").get(function(request, response) {
 	$.writeFile("index.html");
 });
 
-$.start();
+$("/test").post(function(request, response, data) {
+	console.log(data);
+});
+
+$.start(8888, true);
