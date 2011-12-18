@@ -1,6 +1,6 @@
 jqNode - A micro-framework for NodeJS : 
 =======================================
-	jqNode is an easy to use micro-framework for NodeJS.
+jqNode is an easy to use micro-framework for NodeJS.
 
 INSTALLATION :
 ==============
@@ -8,18 +8,18 @@ INSTALLATION :
 
 USAGE :
 =======
-var $ = require("jqNode").$;
+	var $ = require("jqNode").$;
 
-$("/").get(function(request, response, data) {
-	$.writeFile("index.html");
-});
+	$("/").get(function(request, response, data) {
+		$.writeFile("index.html");
+	});
 
-$("/data").post(function(request, response, data) {
-	// data.param === value
-	console.log(data);
-});
+	$("/data").post(function(request, response, data) {
+		// data.param === value
+		console.log(data);
+	});
 
-$.start();
+	$.start();
 
 
 METHODS AVAILABLE : 
