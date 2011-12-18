@@ -25,12 +25,12 @@ $.start();
 METHODS AVAILABLE : 
 ===================
 
-$(url)
-	.get(function(request, response) {})
-	.post(function(request, response, data) {})
-	.put(function(request, response) {})
-	.delete(function(request, response) {})
-	.head(function(request, response) {});
+	$(url)
+		.get(function(request, response) {})
+		.post(function(request, response, data) {})
+		.put(function(request, response) {})
+		.delete(function(request, response) {})
+		.head(function(request, response) {});
 
 $.start(port, debugMode); // Starts and returns the server. Port defaults to 8888, debugMode defaults to false.
 
