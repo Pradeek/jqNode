@@ -33,5 +33,7 @@ $(url)
 	.head(function(request, response) {});
 
 $.start(port, debugMode); // Starts and returns the server. Port defaults to 8888, debugMode defaults to false.
+
 $.write(data, contentType); // Writes to the current response. contentType defaults to text/html
+
 $.writeFile(fileName, contentType); // Reads a file and writes it to the current stream.
