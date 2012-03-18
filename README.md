@@ -37,3 +37,16 @@ METHODS AVAILABLE :
 	$.write(data, contentType); // Writes to the current response. contentType defaults to text/html
 
 	$.writeFile(fileName, contentType); // Reads a file and writes it to the current stream.
+
+TODO : 
+======
+	- Sinatra-like routing
+	- Remove favicon (Done)
+	- $.redirect (Done)
+	- $.start({
+			port: 80,
+			debugMode: false,
+			staticDir: 'static/',
+			favicon : 'favicon.ico',
+			notFound : '404.html'
+		})

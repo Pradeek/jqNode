@@ -8,4 +8,10 @@ $("/test").post(function(request, response, data) {
 	console.log(data);
 });
 
-$.start(8888, true);
+$("/sample").get(function(request, response) {
+	$.redirect("/");
+});
+
+$.start({
+	port: 8080
+});
