@@ -46,7 +46,4 @@ TODO :
 	- $.start({
 			port: 80,
 			debugMode: false,
-			staticDir: 'static/',
-			favicon : 'favicon.ico',
-			notFound : '404.html'
 		})
