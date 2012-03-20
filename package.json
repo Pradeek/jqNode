@@ -1,7 +1,7 @@
 {
   "name": "jqNode",
   "description": "An easy to use jQuery-esque library for NodeJS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Pradeek <jpradeek@gmail.com>",
   "keywords": ["framework", "jquery", "web"],
   "repository": "git://github.com/pradeek/jqNode",
